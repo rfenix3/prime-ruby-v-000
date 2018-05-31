@@ -11,9 +11,14 @@ def prime?(n)
     return false
   end
   
+  #######################
+
   (5..n-1).to_a.all? { |possible_factor|
       n % possible_factor != 0}
   
+  #######################
+
+  # better solution above replaces below code
   # i = 5
   # while i * i <= n do
   #   if n % i === 0 or n % (i + 2) === 0
@@ -23,6 +28,7 @@ def prime?(n)
   #   end 
   # end 
   # return true
+  ######################
   
 end
 
