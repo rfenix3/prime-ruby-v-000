@@ -11,8 +11,8 @@ def prime?(n)
     return false
   end
   
-  (5..n-1).to_a.all? do |possible_factor|
-      n % possible_factor != 0
+  (5..n-1).to_a.all? { |possible_factor|
+      n % possible_factor != 0}
   
   # i = 5
   # while i * i <= n do
